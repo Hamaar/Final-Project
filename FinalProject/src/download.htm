@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<!--
+  Original Design: Spectral by HTML5 UP
+    html5up.net | @n33co
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  Jekyll build mod
+-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Popper.js</title>
+    <meta name="description" content="A kickass library used to manage poppers in web applicationsNow much more powerful!">
+
+    <!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="canonical" href="https://popper.js.org/">
+    <link rel="stylesheet" href="/css/main.css">
+    <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
+
+    <script>
+if (window.location.href.indexOf('github.io/popper.js') !== -1) {
+    window.location.href = "https://popper.js.org" + "/"
+}
+    </script>
+
+    <meta property="og:title" content="Popper.js">
+    <meta property="og:description" content="A kickass library used to manage poppers in web applicationsNow much more powerful!">
+    <meta property="og:url" content="https://popper.js.org/">
+    <meta property="og:image" content="https://popper.js.org/images/logo.png">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+
+  <body class="landing">
+    <script>window.document.body.classList.add('is-loading');</script>
+
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+
+      <!-- Header -->
+<header id="header" class="alt">
+  <h1 id="header-title" >
+    <a href="/index.html">Popper.js</a>
+  </h1>
+  <nav id="nav">
+    <ul>
+      <li class="special">
+        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+        <div id="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a href="/popper-documentation.html">Popper.js Documentation</a></li>
+            
+            
+            
+            <li><a href="/tooltip-documentation.html">Tooltip.js Documentation</a></li>
+            
+            
+            
+            <li><a href="/tooltip-examples.html">Tooltip.js</a></li>
+            
+            
+            
+            
+            <li><a href="https://github.com/FezVrasta/popper.js" class="icon fa-github"> GitHub</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <div class="popper" style="width: auto; height: 50px;" id="title-popper">
+    <iframe src="//ghbtns.com/github-btn.html?user=FezVrasta&amp;repo=popper.js&amp;type=star&amp;count=true&amp;size=large" style="height: 30px;width: 145px;"></iframe>
+    <div class="popper__arrow" x-arrow></div>
+  </div>
+</header>
+
+
+      				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>Popper.js</h2>
+							<p><p>A kickass library<br /> used to manage poppers in web applications<br /><a href="https://medium.com/@FezVrasta/popper-js-v1-5e8b3acd888c" target="_blank">Now much more powerful!</a></p>
+</p>
+							<ul class="actions">
+								<li><a href="https://github.com/FezVrasta/popper.js#installation" class="button special">Install v1</a></li>
+							</ul>
+						</div>
+						<a href="#one" class="more scrolly">Learn More</a>
+					</section>
+
+				<!-- Introduction -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Easily position tooltips, popovers or anything<br />
+								with just a line of code!</h2>
+								<p>
+									Trust us, managing poppers can be a pain, we have learned it the hard way!<br>
+									For this reason we have created <strong>Popper.js</strong>, your new best friend.
+								</p>
+
+								<p>
+									Popper.js is just <strong>~6KB</strong> minified and gzipped, zero dependencies.<br />
+									Its code base is in <strong>ES6</strong> and is <strong>automatically tested</strong> against several browsers.<br />
+									If this is not enough, it plays super nicely with
+									<a href="https://github.com/FezVrasta/popper.js/#react-vuejs-angular-angularjs-emberjs-etc-integration" target="_blank"><strong>React</strong>, <strong>AngularJS</strong> and more</a>!
+								</p>
+
+                <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYIE2QW&placement=fezvrastagithubiopopperjs" id="_carbonads_js"></script>
+
+							</header>
+						</div>
+					</section>
+
+				<!-- Tooltip.js banner -->
+					<section id="tooltip-banner" class="wrapper style5 small">
+						<div class="inner">
+							<header class="major">
+								<h2 id="tooltipjs" tabindex="0">Tooltip.js</h2>
+								<p>
+									Looking for a dead simple tooltip library?<br />
+									<b>Tooltip.js</b> is powered by <b>Popper.js</b> and supports all the features you may need for your tooltips.
+								</p>
+								<p>
+									<a id="tooltip-learn-more" href="tooltip-examples.html" class="button">Learn more</a>
+								</p>
+							</header>
+						</div>
+                    </section>
+
+				<!-- live examples -->
+					<section id="two" class="wrapper alt style2">
+						<section class="spotlight">
+							<div class="example">
+								<div class="rel" id="example10reference1">
+    <p class="bold">Hey!</p>
+    <p class="thin">Choose where to put your popper!</p>
+    <select id="example10positionSelector">
+        <option value="top">Top</option>
+        <option value="right">Right</option>
+        <option value="bottom">Bottom</option>
+        <option value="left">Left</option>
+    </select>
+</div>
+
+<div class="popper" width="200" id="example10popper1">
+    <p class="bold">Popper on <b id="example10currentPosition" class="currentPosition"></b></p>
+    <div class="popper__arrow" x-arrow></div>
+</div>
+
+<style>
+    #example10positionSelector {
+        margin-top: 1em;
+    }
+    @media (max-width: 460px) {
+        #example10popper1 {
+            max-width: 100px;
+        }
+    }
+</style>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function(){
+    var index = 0;
+    var popper;
+    var code = $('#example10code').html();
+
+    $('#example10positionSelector').on('change', attachPopper).trigger('change');
+
+    // Stop autoflip popper when the user click on the dropdown
+    $('#example10positionSelector').on('click', function() {
+        clearInterval(autoPopperFunctionTimer);
+    });
+
+    var autoPopperFunctionTimer = setInterval(function() {
+        if (index === 0) {
+            $('#example10positionSelector').val('top');
+            $('#example10positionSelector').trigger('change');
+            index++;
+        } else if (index === 1) {
+            $('#example10positionSelector').val('right');
+            $('#example10positionSelector').trigger('change');
+            index++;
+        } else if (index === 2) {
+            $('#example10positionSelector').val('bottom');
+            $('#example10positionSelector').trigger('change');
+            index++;
+        } else {
+            $('#example10positionSelector').val('left');
+            $('#example10positionSelector').trigger('change');
+            index = 0;
+        }
+    }, 4000);
+
+    function attachPopper(evt) {
+        position = evt.target.value;
+
+        //Position of the popper
+        $('#example10code').html(code.replace('position', position));
+        $('.currentPosition').text(position);
+
+        popper && popper.destroy();
+        popper = new Popper(example10reference1, example10popper1, {
+            placement: position,
+            boundariesElement: example10reference1.parentNode
+        });
+
+    }
+});
+
+</script>
+
+							</div>
+							<div class="content">
+								<h2 id="example10" tabindex="0">Popper on your side!</h2>
+<p id="example10Title">
+    What are you waiting for? Select a popper from that dropdown.<br />
+    Placing poppers around elements is just that easy!
+</p>
+
+<div id="example10code">
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">popper</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Popper</span><span class="p">(</span><span class="nx">referenceElement</span><span class="p">,</span> <span class="nx">onPopper</span><span class="p">,</span> <span class="p">{</span>
+    <span class="na">placement</span><span class="p">:</span> <span class="s1">'position'</span>
+<span class="p">});</span></code></pre></figure>
+</div>
+
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="example">
+								<div class="rel" id="example3reference1">
+    <p class="bold">Drag me</p>
+    <p class="thin">on the edges</p>
+</div>
+
+<div class="popper" id="example3popper1">
+    <p class="bold">Flipping popper</p>
+    <p class="thin">which never flips to right</p>
+    <div class="popper__arrow" x-arrow></div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+    var example3popper1inst = new Popper(example3reference1, example3popper1, {
+        placement: 'left',
+        modifiers: {
+            flip: {
+                behavior: ['left', 'bottom', 'top'],
+            },
+            preventOverflow: {
+                boundariesElement: example3reference1.parentNode,
+            },
+        }
+    });
+    interact('#example3reference1').draggable({
+        restrict: {
+            restriction: "parent",
+            endOnly: true,
+            elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
+        },
+        onmove: dragMoveListener
+    });
+    var x = 0, y = 0;
+    function dragMoveListener (event) {
+        target = event.target,
+            // keep the dragged position in the data-x/data-y attributes
+            x += event.dx,
+            y += event.dy;
+
+        // translate the element
+        target.style.top = y + 'px';
+        target.style.left = x + 'px'
+
+        example3popper1inst.update();
+    }
+
+}, false);
+</script>
+
+<style>
+    #example3reference1:hover {
+        background: rgba(255,255,255,0.2);
+    }
+</style>
+
+							</div>
+							<div class="content">
+								<h2 id="example3" tabindex="0">Custom flip behavior</h2>
+<p>
+    Try dragging the reference element on the left side, its popper will move on its bottom edge.
+    Then, try to move the reference element on the bottom left corner, it will move on its top edge.
+</p>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">popper</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Popper</span><span class="p">(</span><span class="nx">referenceElement</span><span class="p">,</span> <span class="nx">onLeftPopper</span><span class="p">,</span> <span class="p">{</span>
+    <span class="na">placement</span><span class="p">:</span> <span class="s1">'left'</span><span class="p">,</span>
+    <span class="na">modifiers</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">flip</span><span class="p">:</span> <span class="p">{</span>
+            <span class="na">behavior</span><span class="p">:</span> <span class="p">[</span><span class="s1">'left'</span><span class="p">,</span> <span class="s1">'bottom'</span><span class="p">,</span> <span class="s1">'top'</span><span class="p">]</span>
+        <span class="p">},</span>
+        <span class="na">preventOverflow</span><span class="p">:</span> <span class="p">{</span>
+            <span class="na">boundariesElement</span><span class="p">:</span> <span class="nx">container</span><span class="p">,</span>
+        <span class="p">},</span>
+    <span class="p">},</span>
+<span class="p">});</span></code></pre></figure>
+
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="example">
+								<div class="example2__fake-body nano">
+    <div class="nano-content">
+        <div class="example2__scrol-box">
+            <div class="rel" id="example2reference1">
+                <p class="bold">Scroll me</p>
+                <p class="thin">up and down</p>
+            </div>
+
+            <div class="popper" id="example2popper1">
+                <p class="bold">I follow it</p>
+                <p class="thin">staying between boundaries</p>
+                <div class="popper__arrow" x-arrow></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+    var fakeBody = document.querySelector('.example2__fake-body');
+    $('.nano').nanoScroller({ scrollTop: fakeBody.clientHeight / 2 });
+
+    setTimeout(function() {
+        var pop1 = new Popper(example2reference1, example2popper1, {
+            placement: 'left',
+        });
+    }, 1000);
+}, false);
+</script>
+
+<style>
+    .example2__fake-body {
+        overflow-x: scroll;
+        height: 450px;
+        flex: 1;
+    }
+    .example2__scrol-box {
+        height: 200%;
+            display: flex;
+            align-content: center;
+            align-items: center;
+    }
+</style>
+
+							</div>
+							<div class="content">
+								<h2 id="example2" tabindex="0">Popper on scrolling container</h2>
+<p>
+    In this example we have a relative div which contains a div with <code>overflow: scroll</code>.<br>
+    Inside it, there are our popper and reference elements.
+</p>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">popper</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Popper</span><span class="p">(</span><span class="nx">referenceElement</span><span class="p">,</span> <span class="nx">onLeftPopper</span><span class="p">,</span> <span class="p">{</span>
+    <span class="na">placement</span><span class="p">:</span> <span class="s1">'left'</span><span class="p">,</span>
+<span class="p">});</span></code></pre></figure>
+
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="example">
+								<div class="rel" id="example4reference1">
+    <p class="bold">Reference</p>
+</div>
+
+<div class="popper" id="example4popper1">
+    <p class="bold">Shifted popper</p>
+    <p class="thin">on start</p>
+    <div class="popper__arrow" x-arrow></div>
+</div>
+
+<div class="popper" id="example4popper2">
+    <p class="bold">Shifted popper</p>
+    <p class="thin">on end</p>
+    <div class="popper__arrow" x-arrow></div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+    var shiftStart = new Popper(example4reference1, example4popper1, {
+        placement: 'left-start',
+    });
+
+    var shiftEnd = new Popper(example4reference1, example4popper2, {
+        placement: 'bottom-end',
+    });
+
+}, false);
+</script>
+
+<style>
+    #example4popper1,
+    #example4popper2 {
+        width: 100px;
+    }
+    #example4popper1 {
+        height: 150px;
+    }
+</style>
+
+							</div>
+							<div class="content">
+								<h2 id="example4" tabindex="0">Shifted poppers</h2>
+<p>
+    Shift your poppers on start or end of its reference element side.
+</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">shiftStart</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Popper</span><span class="p">(</span><span class="nx">referenceElement</span><span class="p">,</span> <span class="nx">shiftStartPopper</span><span class="p">,</span> <span class="p">{</span>
+    <span class="na">placement</span><span class="p">:</span> <span class="s1">'left-start'</span><span class="p">,</span>
+<span class="p">});</span>
+
+<span class="kd">var</span> <span class="nx">shiftEnd</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Popper</span><span class="p">(</span><span class="nx">referenceElement</span><span class="p">,</span> <span class="nx">shiftEndPopper</span><span class="p">,</span> <span class="p">{</span>
+    <span class="na">placement</span><span class="p">:</span> <span class="s1">'bottom-end'</span><span class="p">,</span>
+<span class="p">});</span></code></pre></figure>
+
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="example">
+								<div class="rel" id="example5reference1">
+    <p class="bold">Pop</p>
+    <p class="thin">on the bottom</p>
+</div>
+
+<div class="popper" id="example5popper1">
+    <p class="bold">Popper on bottom</p>
+    <p class="thin">Flips when hits viewport</p>
+    <div class="popper__arrow" x-arrow></div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        var pop1 = new Popper(example5reference1, example5popper1, {
+            placement: 'bottom'
+        });
+    }, false);
+</script>
+
+							</div>
+							<div class="content">
+								<h2 id="example5" tabindex="0">Viewport boundaries</h2>
+<p>
+    By default, poppers use as boundaries the page viewport.<br>
+    Scroll the page to see the popper flip when hits the page viewport margins.
+</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">popper</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Popper</span><span class="p">(</span><span class="nx">referenceElement</span><span class="p">,</span> <span class="nx">onBottomPopper</span><span class="p">,</span> <span class="p">{</span>
+    <span class="na">placement</span><span class="p">:</span> <span class="s1">'bottom'</span>
+<span class="p">});</span></code></pre></figure>
+
+							</div>
+						</section>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2 id="features" tabindex="0">Features</h2>
+								<p>We know, every popper has its own story. You must be able to fully customize<br>
+								its behavior with ease. We have prepared a set of awesome options to satisfy your needs!</p>
+								<p>But they will never be enough, for this reason, Popper.js supports plugins (we call them "Modifiers")</p>
+							</header>
+							<ul class="features">
+								<li class="icon fa-arrows">
+									<h3 id="placements" tabindex="0">Placements</h3>
+									<p>
+										You decide where the popper will stay, choose between the four sides of your
+										reference element and shift it on the start or at the end of it.
+									</p>
+								</li>
+								<li class="icon fa-square-o">
+									<h3 id="boundaries" tabindex="0">Custom Boundaries</h3>
+									<p>
+										We don't want your poppers to get lost. Give them some boundaries to make sure
+										they will stay within them.
+									</p>
+								</li>
+								<li class="icon fa-exchange">
+									<h3 id="flip" tabindex="0">Flip and Move</h3>
+									<p>
+										What if your popper hits walls? Will it act like a ghost, passing through it,
+										or will it change side of its reference element? It's up to you.
+									</p>
+								</li>
+								<li class="icon fa-caret-right">
+									<h3 id="arrows" tabindex="0">Arrows</h3>
+									<p>
+										Poppers have arrows, usually.<br>
+										We take care of them making sure they stay in the right place: between popper
+										and reference element.
+									</p>
+								</li>
+								<li class="icon fa-magnet">
+									<h3 id="position" tabindex="0">Fixed or Absolute?</h3>
+									<p>
+										We automatically detect when your popper should be absolutely positioned or
+										fixed. Don't worry about that!
+									</p>
+								</li>
+								<li class="icon fa-bolt">
+									<h3 id="acceleration" tabindex="0">Blazing fast!</h3>
+									<p>
+										No lag, period. Each position update takes almost no time to
+										refresh your poppers. No compromises.
+									</p>
+								</li>
+								<li class="icon fa-crosshairs">
+									<h3 id="offsets" tabindex="0">Offsets</h3>
+									<p>
+										When you need surgical precision about the position of your popper,
+										set an offset to it to shift it by the given amount of pixels.
+									</p>
+								</li>
+								<li class="icon fa-puzzle-piece">
+									<h3 id="modifiers" tabindex="0">Modifiers</h3>
+									<p>
+										Our plugin system allows you to add any kind of feature to Popper.js.<br />
+										Most of the built-in behaviors are written as modifiers!
+									</p>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- CTA -->
+					<section id="cta" class="wrapper style4">
+						<div class="inner">
+							<header>
+								<h2>Ready to start?</h2>
+								<p>Visit our GitHub page to know how to get Popper.js and to learn more about it.</p>
+							</header>
+							<ul class="actions vertical">
+								<li><a href="https://github.com/FezVrasta/popper.js" class="button fit special">GitHub</a></li>
+								<li><a href="popper-documentation.html" class="button fit">Documentation</a></li>
+							</ul>
+						</div>
+					</section>
+
+
+      <!-- Footer -->
+<footer id="footer">
+  <ul class="icons">
+    
+    
+    
+    <li><a target="_blank" href="https://twitter.com/FezVr4sta" class="icon fa-twitter"
+           ><span class="label">twitter</span></a></li>
+    
+    
+    
+    
+    
+    <li><a target="_blank" href="https://github.com/FezVrasta" class="icon fa-github"
+           ><span class="label">github</span></a></li>
+    
+    
+    
+    
+    
+    <li><a target="_blank" href="https://medium.com/@FezVrasta" class="icon fa-medium"
+           ><span class="label">medium</span></a></li>
+    
+    
+    
+    
+    
+    <li><a target="_blank" href="https://linkedin.com/in/FezVrasta" class="icon fa-linkedin-square"
+           ><span class="label">linkedin-square</span></a></li>
+    
+    
+    
+  </ul>
+  <ul class="copyright">
+    <li>&copy; 
+    
+      
+      2016,
+    
+    2019
+    Federico Zivolo & contributors</li>
+    <li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
+    <li>Built with: <a href="https://jekyllrb.com" target="_blank">Jekyll</a></li>
+  </ul>
+</footer>
+
+
+      <!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/interact.js/1.2.6/interact.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.scrollex.min.js"></script>
+<script src="js/jquery.scrolly.min.js"></script>
+<script src="js/skel.min.js"></script>
+<script src="js/util.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
+<script src="https://unpkg.com/popper.js@^1"></script>
+<script src="https://unpkg.com/tooltip.js@^1"></script>
+<script src="js/jquery.nanoscroller.js"></script>
+
+<script>
+  $('h1[id], h2[id], h3[id], h4[id], h5[id]').each(function(i, el) {
+    var name = $(el).prev().find('a[name]:not([href])').attr('name');
+    if (!name) {
+      name = $(el).attr('id');
+      $(el).attr('id', '');
+      $(el).prepend('<a name="' + name + '"></a>')
+    }
+    $(el).wrap('<a class="anchor-wrapper" href="#' + name + '"></a>')
+    $(el).append('<i class="fa fa-link link-anchor" />');
+  });
+</script>
+
+<script src="js/main.js"></script>
+
+
+    </div>
+
+  </body>
+
+</html>

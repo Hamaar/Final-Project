@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Final Project Devc</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.css" />
+
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="index.html">Hamaar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+	<li class="nav-item">
+        <a class="nav-link active disabled" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Exercise1.html">Exercise 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Exercise2.html">Exercise 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Exercise3.html">Exercise 3</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li> 	  
+    </ul>
+  </div>  
+</nav>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Selamat Datang di Web ini</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          Ini web hasil pembelajaran dari DevC JavaScript Development Course.
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Carousel -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/kucing1.jpg" class="d-block w-10" alt="Portofolio Web">
+      </div>
+      <div class="carousel-item">
+        <img src="img/kucing2.jpg" class="d-block w-100" alt="Junior Programmers">
+      </div>
+      <div class="carousel-item">
+        <img src="img/kucing3.jpg" class="d-block w-100" alt="c++">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+<!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="section-header">
+          <h3>Contact Us</h3>
+          
+        </div>
+		<div class="form">
+          <form action="https://formspree.io/hfis15@yahoo.co.id" method="POST" role="form" class="contactForm">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form><br><br><br><br><br>
+        </div>
+      </div><br><br><br><br>
+
+        
+	  </section>
+    
+
+</body>
+
+<footer class="footer">Created Hafis Mandala A. @ 2019 Developer Circle Jakarta and Hactiv8</footer>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+<script src="script.js"></script>
+
+</html>

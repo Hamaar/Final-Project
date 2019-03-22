@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	
+<style>
+
+th{
+color: #fff;}
+
+h2 {
+ text-align: center;
+ }
+ 
+ #icon{
+ width: 30px;
+ margin-top: 6px;
+}
+
+#site-footer {
+height: 50px;
+}
+
+
+#footer1{
+margin-left:2%;
+float:left;
+padding: 5px;
+
+}
+#footer2{
+margin-right:2%;
+float:right;
+}
+
+#paddingBody{
+padding: 50px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #292b2c;
+  color: white;
+  text-align: center;
+}
+
+</style>
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="index.html">Hamaar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+	<li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Exercise1.html">Exercise 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Exercise2.html">Exercise 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active disabled" href="Exercise3.html">Exercise 3</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="index.html#contact">Contact</a>
+      </li> 	  
+    </ul>
+  </div>  
+</nav>
+
+	<!-- Content -->
+<div class="main" id="paddingBody">
+
+  <h2>Exercise 3</h2>
+  Filter : <input id='planetInput' onkeyup='cariIsiPlanet()' type='text' placeholder="cari nama planet">
+        </br>
+        </br>
+		
+<table class="table">
+  <thead>
+    <tr class="bg-success">
+	  <th scope="col">Name</th>
+      <th scope="col">Rotation Period</th>
+      <th scope="col">Orbital Period</th>
+      <th scope="col">Diameter</th>
+      <th scope="col">Climate</th>
+      <th scope="col">Gravity</th>
+      <th scope="col">Terrain</th>
+      <th scope="col">Surface Water</th>
+      <th scope="col">Population</th>
+    </tr>
+  </thead>
+  <tbody id="hamaarPlanet">
+  </tbody>
+</table>
+
+<script type="text/javascript" src="exercise3.js"></script>
+
+ <footer class="bg-success" id="site-footer">
+<div id="footer1">
+<img id="icon" src="http://chittagongit.com//images/github-icon-png/github-icon-png-29.jpg"/>
+  <span style="color: #fff;">https://github.com/Hamaar/Exercise-3</span>
+  </div>
+</footer>
+
+</div>
+</body>
+<footer class="footer">Created Hafis Mandala A. @ 2019 Developer Circle Jakarta and Hactiv8</footer>
+</html>
